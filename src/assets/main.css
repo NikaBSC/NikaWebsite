@@ -44219,7 +44219,8 @@ main {
 .sc-home-headline .btn-roadmap {
   position: absolute;
   bottom: calc(100% - 28rem);
-  width: 19.75rem;
+  width: 400px;
+  height: 450px;
   right: 6rem;
   z-index: 3;
   transition: .4s
