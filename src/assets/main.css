@@ -40418,7 +40418,7 @@ textarea {
 
 .ReactModal__Overlay {
   z-index: 1040;
-  background: rgba(0, 0, 0, .4) !important;
+  background: rgba(0, 0, 0, .9) !important;
   outline: none !important;
   overflow-x: hidden;
   overflow-y: auto;
