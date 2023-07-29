@@ -44229,7 +44229,8 @@ main {
   .sc-home-headline .btn-roadmap {
       position: absolute;
       bottom: 2.5rem;
-      width: 12.125rem;
+      width: 200px;
+      height: 250px;
       right: 0;
       z-index: 3
   }
@@ -44367,7 +44368,7 @@ main {
 @media(max-width:991.98px) {
   .sc-home-headline .headline-text {
       background-image: url(../assets/images/bg-text-headline.webp);
-      height: 83.0625rem
+      height: 88rem
   }
 
   .cover .breadcrumb-wrapper .sc-home-headline .headline-text .breadcrumb,
