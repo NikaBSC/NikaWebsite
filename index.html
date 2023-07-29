@@ -546,205 +546,183 @@
       padding: 8px 16px 16px;
     }
   </style>
-  <script>function hideLoader() {
-    const loaderDiv = document.getElementById('loader');
-    loaderDiv.classList.add('d-none');
-  }
-setTimeout(hideLoader, 20000);
-</script>
-  <script>
-  // JavaScript to toggle the mobile menu
-  document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuBg = document.getElementById('menuBg');
-
-    menuToggle.addEventListener('click', function () {
-      menuToggle.classList.toggle('inactive')
-      mobileMenu.classList.toggle('show');
-      menuBg.classList.toggle('show');
-    });
-
-    // Close the mobile menu when clicking outside the menu background
-    menuBg.addEventListener('click', function () {
-      mobileMenu.classList.remove('show');
-      menuBg.classList.remove('show');
-    });
-  });
-</script>
 </head>
 
 <body class="bd-home bg-dark">
-  <div class="loader loader-dark loader-image fadeOut loader-exit" id="loader"><img src="./src/assets/logomain.png" class="img-brand img-fluid" alt="Logo"></div>
+  <div class="loader loader-dark loader-image fadeOut loader-exit" id="loader"><img src="./src/assets/logomain.png"
+      class="img-brand img-fluid" alt="Logo"></div>
   <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
     <div class="navbar-main">
-        <div class="container">
-            <ul class="col-left">
-                <li class="nav-item-brand">
-                    <a class="navbar-brand absolute" to="/" href="/">
-                        <img src="./src/assets/logomain.png" class="logo-light img-fluid" alt="Logo">
-                    </a>
-                </li>
-            </ul>
-            <ul class="col-right d-lg-none">
-                <li class="nav-item"><button class="nav-icon nav-toggler inactive absolute" id="menuToggle"><span
-                            class="icon-bar top-bar"></span><span class="icon-bar middle-bar"></span> <span
-                            class="icon-bar bottom-bar"></span></button></li>
-            </ul>
-            <div class="desktop-menu d-none d-lg-flex">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active" activeclassname="active" to="/" href="/">Home</a>
-                    </li>
-                    <li class="nav-item"><a id="nav-about" class="nav-link nav-about" activeclassname="active"
-                            target="_blank" href="https://online.flippingbook.com/view/423094576/">Whitepaper</a>
-                    </li>
-                </ul>
-                <ul class="social undefined social-circle social-primary ml-4 undefined">
-                    <li class="social-item"><a href="https://www.twitter.com/nikabsc" target="_blank"
-                            class="social-link social-twitter"><i class="aib ai-twitter"></i></a></li>
-                    <li class="social-item"><a href="https://t.me/nikabsc" target="_blank"
-                            class="social-link social-telegram"><i class="ais ai-paper-plane"></i></a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <ul class="col-left">
+          <li class="nav-item-brand">
+            <a class="navbar-brand absolute" to="/" href="/">
+              <img src="./src/assets/logomain.png" class="logo-light img-fluid" alt="Logo">
+            </a>
+          </li>
+        </ul>
+        <ul class="col-right d-lg-none">
+          <li class="nav-item"><button class="nav-icon nav-toggler inactive absolute" id="menuToggle"><span
+                class="icon-bar top-bar"></span><span class="icon-bar middle-bar"></span> <span
+                class="icon-bar bottom-bar"></span></button></li>
+        </ul>
+        <div class="desktop-menu d-none d-lg-flex">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link active" activeclassname="active" to="/" href="/">Home</a>
+            </li>
+            <li class="nav-item"><a id="nav-about" class="nav-link nav-about" activeclassname="active" target="_blank"
+                href="https://online.flippingbook.com/view/423094576/">Whitepaper</a>
+            </li>
+          </ul>
+          <ul class="social undefined social-circle social-primary ml-4 undefined">
+            <li class="social-item"><a href="https://www.twitter.com/nikabsc" target="_blank"
+                class="social-link social-twitter"><i class="aib ai-twitter"></i></a></li>
+            <li class="social-item"><a href="https://t.me/nikabsc" target="_blank"
+                class="social-link social-telegram"><i class="ais ai-paper-plane"></i></a></li>
+          </ul>
         </div>
+      </div>
     </div>
     <div class="mobile-menu d-lg-none slide-right hide" id="mobileMenu">
-        <div class="mobile-menu-content">
-            <div class="container">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link anim-1 active" activeclassname="active" to="/"
-                            href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link anim-4 false" href="https://online.flippingbook.com/view/423094576/"
-                            target="_blank"> Whitepaper</a></li>
-                </ul>
-            </div>
+      <div class="mobile-menu-content">
+        <div class="container">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link anim-1 active" activeclassname="active" to="/" href="/">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link anim-4 false" href="https://online.flippingbook.com/view/423094576/"
+                target="_blank"> Whitepaper</a></li>
+          </ul>
         </div>
+      </div>
     </div>
     <div class="menu-bg" id="menuBg"></div>
-</nav>
-<main class="animated fadeIn" style="display: block;">
+  </nav>
+  <main class="animated fadeIn" style="display: block;">
     <section class="sc-home-cover py-main">
-        <div class="container">
-            <div class="claim-box">
-            <div class="content">
-                <img src="./src/assets/images/hometitle.svg" class="home-text img-fluid fadeInUp d39">
-                <div class="claim-btn-wrapper fadeInUp d40">
-                    <a href="https://t.me/nikabsc">
-                    <button
-                        class="btn btn-secondary w-100"><span>Join us</span>
-                        <div class="el-block"></div>
-                        <div class="el-loader"></div>
-                    </button>
-                    </a>
-                    <a href="https://pinksale.finance">
-                    <button class="btn btn-secondary w-100"><span>Buy $Nika</span>
-                        <div class="el-block"></div>
-                        <div class="el-loader"></div>
-                    </button>
-                </a>
-                </div>
-            </div><img
-                src="./src/assets/images/homebox.png"
-                class="img-fluid claim-img claim-img-white fadeInUp d31" alt="BG White"><img
-                src="./src/assets/images/bg_box-brown.png"
-                class="img-fluid claim-img claim-img-tosca fadeInDown d32" alt="BG Brown"><img
-                src="./src/assets/images/bg_box-yellow.svg"
-                class="img-fluid claim-img claim-img-pink fadeInRight d35" alt="BG Yellow">
-        </div>
-    </div>
-</section>
-<section class="sc-home-headline">
-    <img src="./src/assets/test.webp" class="img-fluid logo d-none d-md-block"
-        alt="Image">
-    <div class="marquee-up marquee-container" style="--pause-on-hover: running; --pause-on-click: running;">
-        <div class="marquee"
-            style="--play: running; --direction: normal; --duration: 39.9471923828125s; --delay: 0s; --iteration-count: infinite;">
-            <p>Renounced Contract • Based Team • Auto Reflection •</p>
-        </div>
-        <div class="marquee"
-            style="--play: running; --direction: normal; --duration: 39.9471923828125s; --delay: 0s; --iteration-count: infinite;">
-            <p>No Private Sale • No Team Tokens • Strong Community •</p>
-        </div>
-    </div>
-    <div class="headline-text">
-        <div class="container">
-            <div class="row px-md-6 font-nunito">
-                <div class="col-md-6 col-lg-4">
-                    <p class="manga" data-aos="fade-up" data-aos-duration="1500">At Sun God – NIKA, we’re more than just a meme token;
-                        we’re a passionate community of adventurers and One Piece enthusiasts. Our project is built on
-                        the principles of transparency, fairness, and camaraderie. </p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <p class="manga" data-aos="fade-up" data-aos-duration="1700">Inspired by the spirit of the Grand
-                        Line, we aim to create an exciting and engaging ecosystem for all our Nakama. Join us as we
-                        unite under the banner of “Sun God – NIKA” and set sail together!</p>
-                </div>
+      <div class="container">
+        <div class="claim-box">
+          <div class="content">
+            <img src="./src/assets/images/hometitle.svg" class="home-text img-fluid fadeInUp d39">
+            <div class="claim-btn-wrapper fadeInUp d40">
+              <a href="https://t.me/nikabsc">
+                <button class="btn btn-secondary w-100"><span>Join us</span>
+                  <div class="el-block"></div>
+                  <div class="el-loader"></div>
+                </button>
+              </a>
+              <a href="https://pinksale.finance">
+                <button class="btn btn-secondary w-100"><span>Buy $Nika</span>
+                  <div class="el-block"></div>
+                  <div class="el-loader"></div>
+                </button>
+              </a>
             </div>
+          </div><img src="./src/assets/images/homebox.png" class="img-fluid claim-img claim-img-white fadeInUp d31"
+            alt="BG White"><img src="./src/assets/images/bg_box-brown.png"
+            class="img-fluid claim-img claim-img-tosca fadeInDown d32" alt="BG Brown"><img
+            src="./src/assets/images/bg_box-yellow.svg" class="img-fluid claim-img claim-img-pink fadeInRight d35"
+            alt="BG Yellow">
         </div>
-    </div>
-    <div class="image ratio r-1-1 btn-roadmap roadmap-tag">
-        <div class="outer-content d-block">
-            <div class="inner-content"><img src="./src/assets/images/boat.png"
-                    class="img-fluid floating" alt="Image"></div>
-        </div>
-    </div>
-    <div class="vid-trailer r-3-2 scroll-revealInDown revealInDown d20">
-        <video src="./src/assets/media/GEAR5-Trailer.mp4" controls="" controlslist="nodownload noplaybackrate"></video></div>
-    <img src="./src/assets/images/checkout.png" class="img-fluid text-check-trailer d-none d-md-block scroll-revealInDown revealInDown d20" alt="Image">
-    <img src="./src/assets/images/checkoutmobile.png" class="img-fluid text-check-trailer d-block d-md-none scroll-revealInDown revealInDown d20" alt="Image">
-    <div class="marquee-down marquee-container" style="--pause-on-hover: running; --pause-on-click: running;">
-        <div class="marquee"
-            style="--play: running; --direction: reverse; --duration: 62.34364624023438s; --delay: 0s; --iteration-count: infinite;">
-            <p>* Luffy * Zoro * Sanji * Nami * Chopper * Shanks * Franky * Sabo * Nico * Usopp * Brook</p>
-        </div>
-        <div class="marquee"
-            style="--play: running; --direction: reverse; --duration: 62.34364624023438s; --delay: 0s; --iteration-count: infinite;">
-        <p>* Luffy * Zoro * Sanji * Nami * Chopper * Shanks * Franky * Sabo * Nico * Usopp * Brook</p>
-    </div>
-</div>
-</section>
-<section class="sc-home-footer">
-    <div class="image ratio r-4-5 r-md-16-9 img-cover d-none d-md-block scroll-zoomIn zoomIn d1">
-        <div class="outer-content d-block">
-        <div class="inner-content"><img
-                src="./src/assets/images/bg-footer-cover.webp" class="img-fluid "
-                alt="Image"></div>
-    </div>
-</div>
-<div class="image ratio r-4-5 r-md-16-9 img-cover d-block d-md-none scroll-zoomIn zoomIn d1">
-    <div class="outer-content d-block">
-        <div class="inner-content"><img
-                src="./src/assets/images/bg-footer-cover-mobile.webp"
-                class="img-fluid " alt="Image"></div>
-    </div>
-</div>
-</section>
-<div class="sc-claims">
-    <section class="claims-festival"><img src="./src/assets/images/sec4bg.webp" class="bg">
-        <div class="row">
-            <div class="col-12 col-md-6 text-container">
-                <h2 class="h1 darkgray">Join the Straw Hat Pirates <img src="./src/assets/images/Straw-Hat-Logo.png" style="width: auto; height: 40px; margin-bottom: 0.8rem;"> </h2>
-                <p class="mb-0 py-4 darkgray">As a $NIKA holder, you get rewarded for your loyalty! Find out
-                    more about $NIKA and its &amp; benefits!</p><a class="btn darkgray btn-primary" href="https://t.me/nikabsc"><span>Join us Now</span>
-                    <div class="el-block"></div>
-                    <div class="el-loader"></div>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 fadeInUp d3"><img src="./src/assets/images/mainfig.webp" class="bus-carnival ">
-            </div>
-        </div>
+      </div>
     </section>
-</div>
-</main>
-<footer style="display: block;">
-    <div class="container">
+    <section class="sc-home-headline">
+      <img src="./src/assets/test.webp" class="img-fluid logo d-none d-md-block" alt="Image">
+      <div class="marquee-up marquee-container" style="--pause-on-hover: running; --pause-on-click: running;">
+        <div class="marquee"
+          style="--play: running; --direction: normal; --duration: 39.9471923828125s; --delay: 0s; --iteration-count: infinite;">
+          <p>Renounced Contract • Based Team • Auto Reflection •</p>
+        </div>
+        <div class="marquee"
+          style="--play: running; --direction: normal; --duration: 39.9471923828125s; --delay: 0s; --iteration-count: infinite;">
+          <p>No Private Sale • No Team Tokens • Strong Community •</p>
+        </div>
+      </div>
+      <div class="headline-text">
+        <div class="container">
+          <div class="row px-md-6 font-nunito">
+            <div class="col-md-6 col-lg-4">
+              <p class="manga" data-aos="fade-up" data-aos-duration="1500">At Sun God – NIKA, we’re more than just a
+                meme token;
+                we’re a passionate community of adventurers and One Piece enthusiasts. Our project is built on
+                the principles of transparency, fairness, and camaraderie. </p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <p class="manga" data-aos="fade-up" data-aos-duration="1700">Inspired by the spirit of the Grand
+                Line, we aim to create an exciting and engaging ecosystem for all our Nakama. Join us as we
+                unite under the banner of “Sun God – NIKA” and set sail together!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image ratio r-1-1 btn-roadmap roadmap-tag">
+        <div class="outer-content d-block">
+          <div class="inner-content"><img src="./src/assets/images/boat.png" class="img-fluid floating" alt="Image" id="openModalButton">
+          </div>
+        </div>
+      </div>
+      <div class="vid-trailer r-3-2 scroll-revealInDown revealInDown d20">
+        <video src="./src/assets/media/GEAR5-Trailer.mp4" controls="" controlslist="nodownload noplaybackrate"></video>
+      </div>
+      <img src="./src/assets/images/checkout.png"
+        class="img-fluid text-check-trailer d-none d-md-block scroll-revealInDown revealInDown d20" alt="Image">
+      <img src="./src/assets/images/checkoutmobile.png"
+        class="img-fluid text-check-trailer d-block d-md-none scroll-revealInDown revealInDown d20" alt="Image">
+      <div class="marquee-down marquee-container" style="--pause-on-hover: running; --pause-on-click: running;">
+        <div class="marquee"
+          style="--play: running; --direction: reverse; --duration: 62.34364624023438s; --delay: 0s; --iteration-count: infinite;">
+          <p>* Luffy * Zoro * Sanji * Nami * Chopper * Shanks * Franky * Sabo * Nico * Usopp * Brook</p>
+        </div>
+        <div class="marquee"
+          style="--play: running; --direction: reverse; --duration: 62.34364624023438s; --delay: 0s; --iteration-count: infinite;">
+          <p>* Luffy * Zoro * Sanji * Nami * Chopper * Shanks * Franky * Sabo * Nico * Usopp * Brook</p>
+        </div>
+      </div>
+    </section>
+    <section class="sc-home-footer">
+      <div class="image ratio r-4-5 r-md-16-9 img-cover d-none d-md-block scroll-zoomIn zoomIn d1">
+        <div class="outer-content d-block">
+          <div class="inner-content">
+            <img src="./src/assets/images/bg-footer-cover.webp" class="img-fluid blur" alt="Image">
+          </div>
+        </div>
+      </div>
+      <div class="image ratio r-4-5 r-md-16-9 img-cover d-block d-md-none scroll-zoomIn zoomIn d1">
+        <div class="outer-content d-block">
+          <div class="inner-content"><img src="./src/assets/images/bg-footer-cover-mobile.webp" class="img-fluid blur"
+              alt="Image"></div>
+        </div>
+      </div>
+    </section>
+    <div class="sc-claims">
+      <section class="claims-festival"><img src="./src/assets/images/sec4bg.webp" class="bg">
         <div class="row">
-        <div class="col-md-6 col-copyright"><span>© 2023 Nika. All rights reserved.</span></div></div>
-</div>
-</footer>
-<script>
-  AOS.init();
-</script>
+          <div class="col-12 col-md-6 text-container">
+            <h2 class="h1 darkgray">Join the Straw Hat Pirates <img src="./src/assets/images/Straw-Hat-Logo.png"
+                style="width: auto; height: 40px; margin-bottom: 0.8rem;"> </h2>
+            <p class="mb-0 py-4 darkgray">As a $NIKA holder, you get rewarded for your loyalty! Find out
+              more about $NIKA and its &amp; benefits!</p><a class="btn darkgray btn-primary"
+              href="https://t.me/nikabsc"><span>Join us Now</span>
+              <div class="el-block"></div>
+              <div class="el-loader"></div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 fadeInUp d3"><img src="./src/assets/images/mainfig.webp" class="bus-carnival ">
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer style="display: block;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-copyright"><span>© 2023 Nika. All rights reserved.</span></div>
+      </div>
+    </div>
+  </footer>
+  <div class="ReactModalPortal">
+    
+  </div>
+  <script src="./src/assets/app.js"></script>
 </body>
 
 </html>
