@@ -12,7 +12,7 @@ function addModalContent() {
               class="img-fluid " alt="Image"></div>
           <div class="modal-body ">
             <div class="modal-content "><img src="./src/assets/images/roadmap.png"
-                class="img-fluid roadmap d-none d-md-block" alt="Image" style="width: 80%;max-width: 700px;margin: auto;"><img
+                class="img-fluid roadmap d-none d-md-block" alt="Image" style="width: 80%;max-width: 850px;margin: auto;"><img
                 src="/_next/static/images/roadmap-mobile-f937aa554e54d02b04d90f8f7fe4ba59.jpg"
                 class="img-fluid roadmap d-block d-md-none" alt="Image"></div>
           </div>
