@@ -11276,7 +11276,6 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: .5rem;
@@ -40535,7 +40534,6 @@ textarea {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
   background-clip: padding-box;
   outline: 0
 }
@@ -44146,7 +44144,6 @@ main {
 
 .modal-roadmap .modal-wrapper {
   max-height: 100vh;
-  overflow: scroll;
   width: 100%
 }
 
@@ -44268,14 +44265,14 @@ main {
 @media(max-width:991.98px) {
   .sc-home-headline .text-check-trailer {
       left: 0;
-      top: calc(60% - 15rem)
+      top: calc(50% - 15rem)
   }
 }
 
 .sc-home-headline .logo {
   position: absolute;
   z-index: 3;
-  top: -14rem;
+  top: -11rem;
   width: 22.375rem
 }
 
