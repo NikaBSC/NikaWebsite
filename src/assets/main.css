@@ -46163,7 +46163,17 @@ main {
 .pe-none {
   pointer-events: none
 }
+.roadmap-check{
+	position: absolute;
+	top: 42%;
+	right: 10%
+}
 
+@media(min-width:1000px){
+	.roadmap-check{
+	display:none;
+}
+}
 footer,
 main {
   display: none
