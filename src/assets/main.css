@@ -46169,7 +46169,7 @@ main {
 	right: 10%
 }
 
-@media(min-width:1000px){
+@media(max-width:1000px){
 	.roadmap-check{
 	display:none;
 }
